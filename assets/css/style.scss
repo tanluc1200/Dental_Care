@@ -1,0 +1,196 @@
+:root {
+    --font-primary: "Sora", sans-serif;
+    --header-bg: #10375c;
+}
+html {
+    font-family: var(--font-primary);
+    font-size: 6.25%;
+}
+body {
+    font-size: 16rem;
+    font-weight: normal;
+}
+.header {
+    padding-top: 30px;
+    background: var(--header-bg);
+    min-height: 100vh;
+    font-size: 1rem;
+    &-top {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        row-gap: 10em;
+        // justify-content: space-between;
+    }
+    &-menu {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        // font-size: 1rem;
+        margin-left: auto;
+        column-gap: 42em;
+        row-gap: 10em;
+    }
+    &-item:first-child::before {
+        position: absolute;
+        content: "";
+        width: 6em;
+        height: 6em;
+        background: white;
+        border-radius: 50%;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    &-item:first-child {
+        padding-left: 14em;
+    }
+    &-item {
+        position: relative;
+    }
+    &-link {
+        font-size: 16em;
+        color: #c9d2da;
+        font-weight: 300;
+        padding-block: 0.5em;
+    }
+    &-link--active {
+        color: white;
+        font-weight: 400;
+    }
+    &-call-action {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 28em;
+        margin-left: 222rem;
+    }
+    &-action:first-child > &-btn {
+        color: #c9d2da;
+    }
+    &-btn {
+        color: #ffffff;
+        font-size: 16em;
+    }
+}
+.logo {
+    display: inline-flex;
+    align-items: flex-start;
+    // font-size: 1rem;
+    &__circle,
+    &__circle::after {
+        display: inline-block;
+        content: "";
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+    }
+    &__circle {
+        position: relative;
+        width: 30em;
+        height: 30em;
+        background: #2e80ce;
+    }
+    &__circle::after {
+        position: absolute;
+        width: 16em;
+        height: 16em;
+        background: white;
+        top: 11em;
+        right: 3em;
+    }
+    &__branch {
+        display: block;
+        font-weight: 400;
+        font-size: 18em;
+        color: #ffffff;
+    }
+    &__branch--small {
+        font-size: 12em;
+        font-weight: 300;
+        align-items: end;
+        text-align: right;
+    }
+    &__text {
+        line-height: 16em;
+        margin-left: 6em;
+    }
+}
+.hero {
+    margin-top: 76rem;
+    padding-bottom: 130rem;
+    display: flex;
+    flex-wrap: wrap;
+    // column-gap: 113rem;
+    font-size: 16rem;
+    color: white;
+    align-items: center;
+    &__content {
+        width: 44%;
+        flex-shrink: 0;
+    }
+    &__media {
+        flex: 1;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 70rem;
+        line-height: 1.14;
+        letter-spacing: -0.02em;
+        margin-bottom: 22rem;
+    }
+    &__desc {
+        font-weight: 300;
+        font-size: 18rem;
+        line-height: 1.67;
+        color: #c9d2da;
+        margin-bottom: 38rem;
+    }
+    &__action-desc {
+        font-size: 18rem;
+    }
+    &__action {
+        display: flex;
+        align-items: center;
+        column-gap: 39rem;
+    }
+    &__btn {
+        --width: 205rem;
+        --height: 60rem;
+    }
+    &__img {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        img {
+            border-radius: 6px;
+        }
+        img:first-child {
+            position: relative;
+            width: 330rem;
+            height: 540rem;
+            object-fit: cover;
+            margin-right: -6rem;
+        }
+        img:last-child {
+            border-radius: 0 6px 6px 0;
+            width: 210rem;
+            height: 410rem;
+            object-fit: cover;
+            -webkit-border-radius: 0 6px 6px 0;
+            -moz-border-radius: 0 6px 6px 0;
+            -ms-border-radius: 0 6px 6px 0;
+            -o-border-radius: 0 6px 6px 0;
+}
+    }
+}

@@ -1,0 +1,21 @@
+.container {
+    width: min(100% - 48px, 1170px);
+    margin-inline: auto;
+}
+.btn {
+    --width: 104rem;
+    --height: 44rem;
+    display: inline-flex;
+    padding-inline: 10rem;
+    align-items: center;
+    justify-content: center;
+    background: #2e80ce;
+    color: white;
+    min-width: var(--width);
+    min-height: var(--height);
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    -ms-border-radius: 999px;
+    -o-border-radius: 999px;
+}
